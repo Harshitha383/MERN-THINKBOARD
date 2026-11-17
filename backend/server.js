@@ -8,7 +8,7 @@ app.get("/api/notes",(req,res) => {
 });
 
 app.post("/api/notes",(req,res) => {
-    //send the notes
+    //create a notes
     res.send("you got 5 notes");
 });
 
