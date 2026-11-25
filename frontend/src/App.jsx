@@ -9,7 +9,7 @@
  const App = () => {
   return (
     <div>
-      <button onClick={() => toast.error("congrats")}>Click me</button>
+      <button onClick={() => toast.error("congrats")} className="text-red-500 p-4 bg-pink-300">Click me</button>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/create" element={<CreatePage />} />
