@@ -3,7 +3,7 @@ import ratelimiter from "../config/upstash.js";
 const rateLimiter = async (req, res, next) => {
   //per user => Harshitha
     try {
-        const {success} = await ratelimiter.limit("my-rate-limit");
+        const {success} = await ratelimiter.limit("my-rate-limit ");
 
         if(!success) {
             return res.status(429).json({
