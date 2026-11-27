@@ -5,10 +5,11 @@
  import NoteDetailPage from "./pages/NoteDetailPage";
  import Navbar from "./components/Navbar";
 
+ 
  const App = () => {
   return (
     <div data-theme="forest">
-      <Navbar></Navbar>
+      <Navbar />
       <Routes>
         <Route path= "/" element={<HomePage />} />
         <Route path= "/create" element={<CreatePage />} />
